@@ -142,6 +142,9 @@ Admin:
 
 (all)Order done page: Thanks text
 
+(customer)Catalogue:
+1. Image list of categories(clickable, navigate to list of goods in category)
+
 (seller, admin)List of categories:
 1. List of categories(clickable, navigate to list of goods in category), with edit/remove buttons
 2. Add category button
@@ -151,7 +154,8 @@ Admin:
 (seller, admin)Add/edit category page:
 1. Path(select from list)
 2. Category name
-3. Save button 
+3. Image
+4. Save button 
 
 (seller, admin)List of goods in category:
 1. List of goods(clickable, navigate to good info), with edit/remove buttons
