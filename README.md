@@ -117,20 +117,20 @@ Admin:
 (guest, customer)Shopping cart:
 1. List of selected goods, count of each good, price, +/- buttons
 2. Summary price
-2. Make order button
+3. Make an order button
 
-(guest)Full make order form:
+(guest)Fast order form:
 1. Name (required)
 2. Surname (optional)
 3. Phone (required)
 4. E-mail (reqired)
 5. Address (optional)
 6. Delivery type(optional, default)
-7. Payment type(optional, default)
+7. Payment type(required)
 8. Submit button
 []send e-mail to customer, if e-mail has been added
 
-(customer)Short make order form:
+(customer)Usual order form:
 1. Name (required, but set from profile)
 2. Surname (required, but set from profile)
 3. Phone (required, but set from profile)
