@@ -25,7 +25,7 @@ Left side:
 4. Delivery(all)
 5. Payment(all)
 6. Contacts(all)
-7. Profile info(customer, seller, admin)
+7. Profile info(customer)
 8. Orders(customer, seller, admin)
 9. Change password button (customer, seller, admin)
 10. Shopping cart(guest, customer)
@@ -90,7 +90,7 @@ Admin:
 4. Sign up button
 []send e-mail to user
 
-(customer, seller, admin)Profile info:
+(customer)Profile info:
 1. Name (required)
 2. Surname (required)
 3. Phone (required)
@@ -214,7 +214,7 @@ Admin:
 2. Save Button
 
 (admin)Roles:
-1. User (clickable, navigate to profile info)
+1. User (clickable, navigate to customer profile info)
 2. Role
 3. Set Role button
 4. edit/remove button [] Confirmation yes/no
