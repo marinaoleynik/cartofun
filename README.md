@@ -140,7 +140,7 @@ Admin:
 7. Submit button
 []send e-mail to customer 
 
-(all)Order done/error page: Thanks/Error text
+(all)Order done page: Thanks text
 
 (seller, admin)List of categories:
 1. List of categories(clickable, navigate to list of goods in category), with edit/remove buttons
