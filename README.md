@@ -168,8 +168,8 @@ Admin:
 2. Name
 3. Price
 4. Discount (with checkbox "visible") (Optional) Add ability to set dates from-to
-5. Count of items in the storage (with checkbox "visible")
-6. present/absent/for_booking(select from list) 
+5. Count of items in the storage
+6. present/absent/for_booking/last_items(select from list) 
 7. photo (less than 5 )
 8. description
 9. Save button
@@ -181,8 +181,7 @@ Admin:
 3. Description
 4. Price
 5. Discount (Optional, Red colored, dates from-to)
-6. Count of items in the storage (Optional, "last items")
-7. Status text (present/absent/for_booking)
+6. Status text (present/absent/for_booking)
 []Added to reviewed goods
 
 (seller, admin)List of Articles:
