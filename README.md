@@ -37,7 +37,7 @@ Central:
 Current page will be loaded here
 
 (Optional) Bottom:
-Here will be goods, that site recommend for current user 
+Goods are recommended by site for current user will be here.
 
 Footer:
 1. Links : Catalogue, Delivery, Payment, Contacts
