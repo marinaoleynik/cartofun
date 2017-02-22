@@ -167,21 +167,22 @@ Admin:
 1. Path(category) -> default value set from prev page, but can be changed
 2. Name
 3. Price
-4. Discount (with checkbox "visible")
-5. Count of items in the storage (not visible for customer, but used by shopping cart)
+4. Discount (with checkbox "visible") (Optional) Add ability to set dates from-to
+5. Count of items in the storage (with checkbox "visible")
 6. present/absent/for_booking(select from list) 
-7. photo
+7. photo (less than 5 )
 8. description
 9. Save button
 [] Changes shouldn't offend orders in work
 
 (all)Good Info:
-1. Photo
+1. Photo or "No photo" text, ability to see photos
 2. Title
 3. Description
 4. Price
-5. Discount (OPtional, Red colored)
-6. Status text (present/absent/for_booking)
+5. Discount (Optional, Red colored, dates from-to)
+6. Count of items in the storage (Optional, "last items")
+7. Status text (present/absent/for_booking)
 []Added to reviewed goods
 
 (seller, admin)List of Articles:
