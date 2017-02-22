@@ -184,7 +184,7 @@ Admin:
 6. Status text (present/absent/for_booking)
 []Added to reviewed goods
 
-(seller, admin)List of Articles:
+(seller, admin)News:
 1. List of Articles(clickable, navigate to Article), with edit/remove buttons
 2. New Article button
 [] The Confirmation page before remove (yes/no)
