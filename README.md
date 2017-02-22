@@ -3,9 +3,9 @@ online auto accessories shop
 
 Online Shop.
 
-The shop should be implemented in common design for all pages. 
-Common page design consists of next elements:
-Header, Page Path, Left side, Central part, Bottom, Footer. Each of them is described below.
+The shop should be implemented using common design for all pages. 
+Common page design consists of next elements: Header, Page Path, Left side, Central part, Bottom, Footer. Each of them is described below.
+
 
 Header:
 1. Some clickable image with logo (navigate to main page)
@@ -18,13 +18,20 @@ Page Path:
 Links with path for current page, on example: "Main"(clickable) -> "Catalogue"(clickable) -> "Category1"(clickable) -> "This good"
 
 Left side:
-1. Main
-2. News
-3. Catalogue
-4. Delivery
-5. Payment
-6. Contacts
-(Optional)7.Search
+1. Main(all)
+2. News(all)
+3. Catalogue(all)
+4. Delivery(all)
+5. Payment(all)
+6. Contacts(all)
+7. Profile info(customer, seller, admin)
+8. Orders(customer, seller, admin)
+9. Change password button (customer, seller, admin)
+10. Shopping cart(guest, customer)
+11. List of categories(seller, admin)
+12. Logo, CompanyName(seller, admin)
+13. Roles(admin)
+(Optional)14. Search(all)
 
 Central:
 Current page will be loaded here
@@ -41,6 +48,7 @@ Roles:
 1. Guest
 2. Customer
 3. Seller
+4. Admin 
 
 Guest:
 1. Can see info about News, Catalogue, Delivery, Payment, Contacts
@@ -64,40 +72,64 @@ Seller:
 6. Can manage orders
 7. Can change logo image and shop name
 
-Login page:
+Admin:
+1.-7. the same as seller 
+8. Manage users and roles
+
+(guest)Login page:
 1. Put e-mail
 2. Put password
 3. Login button
 4. Forgot password link
 
-Sign up page:
+(guest)Sign up page:
 1. Put email
 2. Put password
 3. Put password again
 4. Sign up button
+[]send e-mail to user
 
-Profile info:
+(customer, seller, admin)Profile info:
 1. Name (required)
 2. Surname (required)
 3. Phone (required)
 4. Address (optional)
-5. History of orders
-6. Change password
+5. Save button
+[]send e-mail to user
 
-Shopping cart:
-1. List of selected, goods, count of each good, +/- buttons
+(customer)History of orders 
+1. List(clickable, navigate to order info)
+
+(customer)Order Info:
+1. Order number
+2. List of selected goods, count of each good, price
+3. Summary price
+4. Status (in progress, waiting for payment, during delivery, done)
+
+(customer, seller, admin)Change password:
+1. Old password
+2. New password
+3. Confirm password
+4. Save button
+[]Send e-mail to user
+
+(guest, customer)Shopping cart:
+1. List of selected goods, count of each good, price, +/- buttons
+2. Summary price
 2. Make order button
 
-Full make order form:
+(guest)Full make order form:
 1. Name (required)
 2. Surname (required)
 3. Phone (required)
 4. Address (optional)
 5. Delivery type(required)
 6. Payment type(required)
-7. Submit button
+7. E-mail (optional)
+8. Submit button
+[]send e-mail to customer, if e-mail has been added
 
-Short make order form:
+(customer)Short make order form:
 1. Name (required, but set from profile)
 2. Surname (required, but set from profile)
 3. Phone (required, but set from profile)
@@ -105,26 +137,28 @@ Short make order form:
 5. Delivery type(required)
 6. Payment type(required)
 7. Submit button
+[]send e-mail to customer 
 
-Order done/error page: Thanks/Error text
+(all)Order done/error page: Thanks/Error text
 
-List of categories:
+(seller, admin)List of categories:
 1. List of categories(clickable, navigate to list of goods in category), with edit/remove buttons
 2. Add category button
-* Category should be empty to successful remove
-* The Confirmation page before remove (yes/no)
+[] Category should be empty to successful remove
+[] The Confirmation page before remove (yes/no)
 
-Add/edit category page:
+(seller, admin)Add/edit category page:
 1. Path(select from list)
 2. Category name
+3. Save button 
 
-List of goods in category:
+(seller, admin)List of goods in category:
 1. List of goods(clickable, navigate to good info), with edit/remove buttons
 2. Add good button
-* The Confirmation page before remove (yes/no)
-* Can't be removed if some items is already in DB, that's why some goods can be marked as "not visible for customer, but exists in DB"
+[] The Confirmation page before remove (yes/no)
+[] Can't be removed if some items is already in DB, that's why some goods can be marked as "not visible for customer, but exists in DB"
 
-Add/Edit Good:
+(seller, admin)Add/Edit Good:
 1. Path(category) -> default value set from prev page, but can be changed
 2. Name
 3. Price
@@ -133,5 +167,64 @@ Add/Edit Good:
 6. present/absent/for_booking(select from list) 
 7. photo
 8. description
+9. Save button
+[] Changes shouldn't offend orders in work
 
+(all)Good Info:
+1. Photo
+2. Title
+3. Description
+4. Price
+5. Discount (OPtional, Red colored)
+6. Status text (present/absent/for_booking)
+[]Added to reviewed goods
 
+(seller, admin)List of Articles:
+1. List of Articles(clickable, navigate to Article), with edit/remove buttons
+2. New Article button
+[] The Confirmation page before remove (yes/no)
+
+(seller, admin)Add/Edit Article:
+1. Title
+2. Content (text, links)
+3. Button to add image 
+4. Save button 
+[] author and creation time are added automatically
+
+(seller, admin)List of orders:
+1. List of Orders(clickable, navigate to Order)
+2. New order button
+
+(seller, admin)Order:
+1. Order number
+2. User info (name, surname, phone, address, etc.)
+3. Order content (List of selected goods, count of each good, +/- buttons)
+4. Summary price
+5. Status (in progress, waiting for payment, during delivery, done)
+6. Edit Button []Confirmation, []send e-mail to customer
+7. Remove Button []Confirmation, []send e-mail to customer
+
+(seller, admin)Delivery, Payment, Contacts, Logo, CompanyName:
+1. Text Field 
+2. Save Button
+
+(admin)Roles:
+1. User (clickable, navigate to profile info)
+2. Role
+3. Set Role button
+4. edit/remove button [] Confirmation yes/no
+
+(admin)Set role: 
+1. Select user from list
+2. checkbox set seller
+3. Save button
+
+Other possible features:
+
+(guest, customer)Reviewed Goods(Optional):
+List of goods images, navigation left, right
+
+(all)Search(Optional)
+Find text in news and goods info and make page with results
+
+(all)Comments, Rate(Optional)
