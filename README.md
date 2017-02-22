@@ -105,7 +105,7 @@ Admin:
 1. Order number
 2. List of selected goods, count of each good, price
 3. Summary price
-4. Status (in progress, waiting for payment, during delivery, done)
+4. Status (new, accepted, waiting for payment, waiting to be sent, during delivery, done, canceled)
 
 (customer, seller, admin)Change password:
 1. Old password
@@ -201,7 +201,7 @@ Admin:
 2. User info (name, surname, phone, address, etc.)
 3. Order content (List of selected goods, count of each good, +/- buttons)
 4. Summary price
-5. Status (in progress, waiting for payment, during delivery, done)
+5. Status (new, accepted, waiting for payment, waiting to be sent, during delivery, done, canceled)
 6. Edit Button []Confirmation, []send e-mail to customer
 7. Remove Button []Confirmation, []send e-mail to customer
 
