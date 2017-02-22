@@ -13,6 +13,7 @@ Header:
 3. Phones
 4. Login/logout button
 5. Shopping cart button
+6. Profile Info
 
 Page Path:
 Links with path for current page, on example: "Main"(clickable) -> "Catalogue"(clickable) -> "Category1"(clickable) -> "This good"
@@ -29,7 +30,7 @@ Left side:
 9. Change password button (customer, seller, admin)
 10. Shopping cart(guest, customer)
 11. List of categories(seller, admin)
-12. Logo, CompanyName(seller, admin)
+12. Logo, CompanyName(admin)
 13. Roles(admin)
 (Optional)14. Search(all)
 
@@ -58,13 +59,13 @@ Guest:
 
 Customer:
 1. Can see info about News, Catalogue, Delivery, Payment, Contacts
-2. Can login / logout
+2. Can logout
 3. Can manage profile info(user contacs and history of orders)
 4. Can add goods to shopping cart
 5. Can make order with "order form"
 
 Seller:
-1. Can login / logout
+1. Can logout
 2. Can see and edit info about Delivery, Payment, Contacts
 3. Can add/edit/remove categories to catalogue
 4. Can add/edit/remove goods to catalogue
@@ -120,12 +121,12 @@ Admin:
 
 (guest)Full make order form:
 1. Name (required)
-2. Surname (required)
+2. Surname (optional)
 3. Phone (required)
-4. Address (optional)
-5. Delivery type(required)
-6. Payment type(required)
-7. E-mail (optional)
+4. E-mail (reqired)
+5. Address (optional)
+6. Delivery type(optional, default)
+7. Payment type(optional, default)
 8. Submit button
 []send e-mail to customer, if e-mail has been added
 
@@ -204,7 +205,11 @@ Admin:
 6. Edit Button []Confirmation, []send e-mail to customer
 7. Remove Button []Confirmation, []send e-mail to customer
 
-(seller, admin)Delivery, Payment, Contacts, Logo, CompanyName:
+(seller, admin)Delivery, Payment, Contacts
+1. Text Field 
+2. Save Button
+
+(admin)Logo, CompanyName:
 1. Text Field 
 2. Save Button
 
