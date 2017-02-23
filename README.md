@@ -4,7 +4,7 @@ online auto accessories shop
 Online Shop.
 
 The shop should be implemented using common design for all pages. 
-Common page design consists of next elements: Header, Page Path, Left side, Central part, Bottom, Footer. Each of them is described below.
+Common page design consists of next elements: Header, Page Path, Left side, Central part, Bottom, Footer. Each of them is described below. Site also should be adequately resized when mobile device is used.
 
 
 Header:
